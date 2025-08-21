@@ -3,9 +3,11 @@ local mapping = {
   lua = { "lua_ls" },
   rust = { "rust_analyzer" },
   javascript = { "ts_ls", "eslint" },
+  astro = { "ts_ls", "eslint", "astro" },
   typescript = { "ts_ls", "eslint" },
   typescriptreact = { "ts_ls", "eslint" },
   javascriptreact = { "ts_ls", "eslint" },
+  ocaml = { "ocamlls" },
 }
 
 local augroup = vim.api.nvim_create_augroup("lsp", { clear = true })
@@ -15,6 +17,7 @@ for ft, lsps in pairs(mapping) do
     group = augroup,
     pattern = ft,
     callback = function()
+      print(vim.inspect(lsps))
       vim.lsp.enable(lsps)
     end,
   })

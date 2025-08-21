@@ -5,6 +5,7 @@ vim.opt.grepprg = "rg --vimgrep --no-heading"
 vim.opt.list = false
 vim.opt.guicursor = ""
 vim.opt.colorcolumn = "0"
+vim.opt.winborder = "rounded"
 
 vim.opt.number = false
 vim.opt.relativenumber = false

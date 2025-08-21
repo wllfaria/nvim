@@ -17,6 +17,7 @@ conform.setup({
     javascriptreact = { "prettierd" },
     rust = { "rust_analyzer" },
     sql = { "pg_format" },
+    ocaml = { "ocamlformat" },
   },
   format_on_save = function()
     if not vim.g.autoformat then
