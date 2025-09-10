@@ -7,8 +7,8 @@ vim.opt.guicursor = ""
 vim.opt.colorcolumn = "0"
 vim.opt.winborder = "rounded"
 
-vim.opt.number = false
-vim.opt.relativenumber = false
+vim.opt.number = true
+vim.opt.relativenumber = true
 vim.opt.completeopt = "menu,menuone,noinsert"
 vim.opt.termguicolors = true
 vim.opt.undofile = true
@@ -29,7 +29,7 @@ vim.opt.smartindent = true
 vim.opt.wrap = false
 
 vim.opt.scrolloff = 8
-vim.opt.signcolumn = "no"
+vim.opt.signcolumn = "yes"
 
 vim.opt.updatetime = 50
 

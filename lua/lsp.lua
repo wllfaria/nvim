@@ -17,7 +17,6 @@ for ft, lsps in pairs(mapping) do
     group = augroup,
     pattern = ft,
     callback = function()
-      print(vim.inspect(lsps))
       vim.lsp.enable(lsps)
     end,
   })
